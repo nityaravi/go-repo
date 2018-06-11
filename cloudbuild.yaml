@@ -6,5 +6,5 @@ steps:
   args: ['build', 'hello']
   env: ['PROJECT_ROOT=hello']
 - name: 'gcr.io/cloud-builders/gsutil'
-  args: ['-m', 'cp', 'hello', 'gs://gcb-docs-bucket/']
+  args: ['-m', 'cp', 'hello', '[BUCKET_NAME]']
   
